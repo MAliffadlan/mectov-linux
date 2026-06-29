@@ -114,6 +114,9 @@ docker run --rm \
         echo ">>> [Container] Setting up EndeavourOS repository..."
         echo -e "\n[endeavouros]\nSigLevel = Never\nServer = https://mirror.alpix.eu/endeavouros/repo/endeavouros/\$arch" >> /etc/pacman.conf
 
+        echo ">>> [Container] Setting up CachyOS repository..."
+        echo -e "\n[cachyos]\nSigLevel = Never\nServer = https://mirror.cachyos.org/repo/\$arch" >> /etc/pacman.conf
+
         echo ">>> [Container] Preparing build environment..."
         WORK_DIR="/tmp/archiso-work"
         PROFILE_DIR="/tmp/mectov-profile"
