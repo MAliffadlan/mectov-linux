@@ -153,7 +153,7 @@ class WelcomeWindow(QWidget):
         button_layout = QVBoxLayout()
         button_layout.setSpacing(12)
 
-        install_btn = QPushButton("Launch Installer")
+        install_btn = QPushButton("Install Mectov Linux")
         install_btn.setObjectName("action_install")
         install_btn.clicked.connect(self.launch_installer)
 
@@ -166,7 +166,7 @@ class WelcomeWindow(QWidget):
         github_btn = QPushButton("View Repository")
         github_btn.clicked.connect(self.open_github)
 
-        quit_btn = QPushButton("Close")
+        quit_btn = QPushButton("Try Live Environment")
         quit_btn.setStyleSheet("color: #f7768e; border: 1px solid #f7768e;")
         quit_btn.clicked.connect(self.close)
 
