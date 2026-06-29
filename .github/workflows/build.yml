@@ -1,0 +1,71 @@
+name: Build and Release Mectov Linux ISO
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggers the build when you push a tag like v1.0.0
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    name: Build and Release ISO
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Free Disk Space on Runner
+        run: |
+          echo ">>> Freeing disk space to prevent build exhaustion..."
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          df -h
+
+      - name: Build Mectov Linux ISO
+        run: |
+          echo ">>> Running the Docker-based build script..."
+          # Running with sudo is required since build.sh uses privileged docker container
+          sudo ./build.sh
+
+      - name: Extract Tag Version
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Upload ISO to Actions Artifacts (Backup)
+        uses: actions/upload-artifact@v4
+        with:
+          name: mectov-linux-iso
+          path: out/mectov-linux-*.iso
+          retention-days: 14
+
+      - name: Create GitHub Release and Upload ISO
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/mectov-linux-*.iso
+          tag_name: ${{ steps.get_version.outputs.VERSION }}
+          name: Mectov Linux Release ${{ steps.get_version.outputs.VERSION }}
+          body: |
+            ## Mectov Linux Release
+            
+            Welcome to the automated release of **Mectov Linux**!
+            
+            ### System Profile
+            - **Base OS**: Arch Linux (rolling release)
+            - **Desktop**: KDE Plasma 6
+            - **Theme Style**: Dark Slate & Emerald Teal (CachyOS style)
+            - **Shell**: Fish Shell with Starship prompt
+            - **Installer**: Calamares Graphical Installer
+            
+            ### How to Use
+            1. Download the `.iso` file below.
+            2. Flash it to a USB drive using Rufus/Ventoy, or run it directly in VirtualBox (make sure to enable **EFI** and **3D Acceleration**).
+            3. The live environment user credentials are `mectov` / `mectov`.
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
