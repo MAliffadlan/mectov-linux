@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Mectov Linux Installer Launcher
+# Launches the Calamares system installer
+
+if [ "$(id -u)" -ne 0 ]; then
+    pkexec calamares
+else
+    calamares
+fi

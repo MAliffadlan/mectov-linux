@@ -1,0 +1,9 @@
+[General]
+ColorSchemeHash=
+
+[KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=kvantum-dark
+
+[Icons]
+Theme=Papirus-Dark

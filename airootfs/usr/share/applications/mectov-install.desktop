@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install Mectov Linux
+Comment=Install Mectov Linux to your hard drive
+Exec=/usr/local/bin/mectov-install
+Icon=calamares
+Terminal=false
+Categories=System;
+Keywords=install;installer;calamares;

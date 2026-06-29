@@ -1,0 +1,6 @@
+work/
+out/
+*.iso
+*.tar.gz
+pacman_cache/
+mirrorlist

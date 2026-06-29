@@ -1,0 +1,175 @@
+# ============================================
+# Mectov Linux - Package List
+# Arch-based distro with KDE Plasma
+# ============================================
+
+# --- Base System ---
+base
+base-devel
+linux
+linux-headers
+linux-firmware
+amd-ucode
+intel-ucode
+
+# --- Bootloader ---
+grub
+efibootmgr
+os-prober
+
+# --- Archiso / Live Environment ---
+archinstall
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
+nbd
+syslinux
+
+# --- Filesystem ---
+btrfs-progs
+dosfstools
+e2fsprogs
+f2fs-tools
+ntfs-3g
+xfsprogs
+gptfdisk
+
+# --- Networking ---
+networkmanager
+network-manager-applet
+wireless_tools
+wpa_supplicant
+iwd
+dhclient
+dhcpcd
+openvpn
+networkmanager-openvpn
+bluez
+bluez-utils
+
+# --- Audio (PipeWire) ---
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wireplumber
+
+# --- Graphics Drivers ---
+mesa
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+vulkan-radeon
+vulkan-intel
+nvidia-open-dkms
+nvidia-utils
+
+# --- Display Server ---
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xdpyinfo
+wayland
+xorg-xwayland
+
+# --- KDE Plasma Desktop ---
+plasma-desktop
+plasma-workspace
+plasma-wayland-protocols
+plasma-pa
+plasma-nm
+plasma-systemmonitor
+plasma-firewall
+kscreen
+kinfocenter
+kgamma
+powerdevil
+sddm
+sddm-kcm
+bluedevil
+kde-gtk-config
+breeze
+breeze-gtk
+breeze-icons
+kdecoration
+kwin
+layer-shell-qt
+libkscreen
+libksysguard
+kpipewire
+xdg-desktop-portal-kde
+kwallet-pam
+drkonqi
+kactivitymanagerd
+plasma-integration
+plasma-browser-integration
+
+# --- KDE Applications ---
+dolphin
+dolphin-plugins
+konsole
+kate
+ark
+spectacle
+gwenview
+okular
+kcalc
+kcolorchooser
+filelight
+partitionmanager
+kdialog
+kfind
+kdeconnect
+
+# --- Installer ---
+calamares
+
+# --- System Utilities ---
+sudo
+bash-completion
+man-db
+man-pages
+texinfo
+nano
+vim
+htop
+btop
+fastfetch
+git
+curl
+wget
+unzip
+zip
+p7zip
+xdg-utils
+xdg-user-dirs
+reflector
+pacman-contrib
+flatpak
+
+# --- Fonts ---
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-liberation
+ttf-dejavu
+ttf-fira-code
+ttf-jetbrains-mono
+
+# --- Web Browser ---
+firefox
+
+# --- Multimedia ---
+vlc
+
+# --- Terminal Extras ---
+fish
+starship
+
+# --- Theming ---
+papirus-icon-theme
+kvantum
+
+# --- Python GUI ---
+python-pyqt6

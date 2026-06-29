@@ -1,0 +1,52 @@
+# Mectov Linux - Starship Prompt Configuration
+# Tokyo Night inspired theme
+
+format = """
+[╭─](bold #7aa2f7)$os$username$hostname$directory$git_branch$git_status$cmd_duration
+[╰─](bold #7aa2f7)$character"""
+
+[os]
+disabled = false
+format = "[$symbol ]($style)"
+style = "bold #7aa2f7"
+
+[os.symbols]
+Arch = "󰣇"
+Linux = "🐧"
+
+[username]
+show_always = true
+format = "[  $user]($style)"
+style_user = "bold #bb9af7"
+style_root = "bold #f7768e"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname]($style) "
+style = "bold #bb9af7"
+
+[directory]
+format = "[ $path]($style)[$read_only]($read_only_style) "
+style = "bold #7dcfff"
+read_only = " 󰌾"
+read_only_style = "#f7768e"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = "[ $symbol$branch(:$remote_branch)]($style) "
+symbol = " "
+style = "bold #9ece6a"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+style = "bold #e0af68"
+
+[cmd_duration]
+format = "[ 󱎫 $duration]($style)"
+style = "bold #565f89"
+min_time = 2_000
+
+[character]
+success_symbol = "[❯](bold #9ece6a)"
+error_symbol = "[❯](bold #f7768e)"

@@ -1,0 +1,16 @@
+[Compositing]
+Backend=OpenGL
+AnimationDurationFactor=0.5
+
+[Desktops]
+Number=2
+Rows=1
+Id_1=desktop-1
+Id_2=desktop-2
+Name_1=Desktop 1
+Name_2=Desktop 2
+
+[org.kde.kdecoration2]
+ButtonsOnLeft=XIA
+ButtonsOnRight=
+theme=Breeze

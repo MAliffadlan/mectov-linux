@@ -1,0 +1,30 @@
+---
+componentName: mectov
+
+strings:
+    productName:         "Mectov Linux"
+    shortProductName:    "Mectov"
+    version:             2026.06
+    shortVersion:        2026.06
+    versionedName:       "Mectov Linux 2026.06"
+    shortVersionedName:  "Mectov 2026.06"
+    bootloaderEntryName: "Mectov Linux"
+    productUrl:          "https://mectov.dev"
+    supportUrl:          "https://github.com/mectov/mectov-linux/issues"
+    knownIssuesUrl:      "https://github.com/mectov/mectov-linux/issues"
+    releaseNotesUrl:     "https://github.com/mectov/mectov-linux/releases"
+    donateUrl:           ""
+
+images:
+    productLogo:         "mectov-logo.png"
+    productIcon:         "mectov-logo.png"
+    productWelcome:      "mectov-welcome.png"
+
+slideshow:               "show.qml"
+slideshow-api: 2
+
+style:
+    SidebarBackground:   "#1a1b26"
+    SidebarText:         "#c0caf5"
+    SidebarTextSelect:   "#7aa2f7"
+    SidebarTextHighlight: "#bb9af7"

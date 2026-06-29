@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mectov Linux Welcome
+Comment=Welcome to Mectov Linux
+Exec=/usr/local/bin/mectov-welcome
+Icon=system-software-install
+Terminal=false
+Categories=System;
+X-GNOME-Autostart-enabled=true
