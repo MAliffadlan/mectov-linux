@@ -147,6 +147,7 @@ xdg-user-dirs
 reflector
 pacman-contrib
 flatpak
+yay
 
 # --- Fonts ---
 noto-fonts
