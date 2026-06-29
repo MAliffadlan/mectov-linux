@@ -13,7 +13,7 @@
 
 Latest ISO is available from our mirror:
 
-**[Download Mectov Linux ISO](https://file.mectov.my.id/share/yGhwiFG0)**
+**[Download Mectov Linux ISO](https://file.mectov.my.id/share/oOcOH6sh)**
 
 ---
 
