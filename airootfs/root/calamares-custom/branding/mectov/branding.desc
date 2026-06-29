@@ -16,9 +16,9 @@ strings:
     donateUrl:           ""
 
 images:
-    productLogo:         "mectov-logo.png"
-    productIcon:         "mectov-logo.png"
-    productWelcome:      "mectov-welcome.png"
+    productLogo:         "mectov-logo.jpg"
+    productIcon:         "mectov-logo.jpg"
+    productWelcome:      "mectov-welcome.jpg"
 
 slideshow:               "show.qml"
 slideshow-api: 2
