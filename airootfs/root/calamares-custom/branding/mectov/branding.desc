@@ -9,10 +9,10 @@ strings:
     versionedName:       "Mectov Linux 2026.06"
     shortVersionedName:  "Mectov 2026.06"
     bootloaderEntryName: "Mectov Linux"
-    productUrl:          "https://mectov.dev"
-    supportUrl:          "https://github.com/mectov/mectov-linux/issues"
-    knownIssuesUrl:      "https://github.com/mectov/mectov-linux/issues"
-    releaseNotesUrl:     "https://github.com/mectov/mectov-linux/releases"
+    productUrl:          "https://github.com/MAliffadlan/mectov-linux"
+    supportUrl:          "https://github.com/MAliffadlan/mectov-linux/issues"
+    knownIssuesUrl:      "https://github.com/MAliffadlan/mectov-linux/issues"
+    releaseNotesUrl:     "https://github.com/MAliffadlan/mectov-linux/releases"
     donateUrl:           ""
 
 images:
