@@ -21,7 +21,7 @@
 
 You can download the latest built ISO of Mectov Linux from our private home server:
 
-* **[Download Mectov Linux ISO (Mirror 1)](PASTE_YOUR_FILEBROWSER_SHARE_LINK_HERE)**
+* **[Download Mectov Linux ISO (Mirror 1)](https://file.mectov.my.id/share/yGhwiFG0)**
 
 
 ## 📦 Pre-installed Software
