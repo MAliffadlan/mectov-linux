@@ -1,4 +1,4 @@
-# Mectov Linux
+# <img src="airootfs/root/calamares-custom/branding/mectov/mectov-logo.jpg" width="48" valign="middle" /> Mectov Linux
 
 **An Arch-based Linux distribution with KDE Plasma and CachyOS performance kernel.**
 
