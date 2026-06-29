@@ -3,69 +3,69 @@
     "logo": {
         "type": "small",
         "color": {
-            "1": "blue",
-            "2": "magenta"
+            "1": "green",
+            "2": "cyan"
         }
     },
     "display": {
         "separator": "  ",
         "color": {
-            "keys": "blue"
+            "keys": "green"
         }
     },
     "modules": [
         {
             "type": "custom",
-            "format": "\u001b[38;2;122;162;247m┌──────────────────────────────────────────┐"
+            "format": "\u001b[38;2;29;199;181m┌──────────────────────────────────────────┐"
         },
         {
             "type": "custom",
-            "format": "\u001b[38;2;122;162;247m│  \u001b[1;38;2;187;154;247m  M E C T O V   L I N U X              \u001b[38;2;122;162;247m│"
+            "format": "\u001b[38;2;29;199;181m│  \u001b[1;38;2;225;230;240m  M E C T O V   L I N U X              \u001b[38;2;29;199;181m│"
         },
         {
             "type": "custom",
-            "format": "\u001b[38;2;122;162;247m└──────────────────────────────────────────┘"
+            "format": "\u001b[38;2;29;199;181m└──────────────────────────────────────────┘"
         },
         "break",
         {
             "type": "os",
             "key": "  OS",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "kernel",
             "key": "  Kernel",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "uptime",
             "key": "  Uptime",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "packages",
             "key": "  Packages",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "shell",
             "key": "  Shell",
-            "keyColor": "blue"
+            "keyColor": "green"
         },
         {
             "type": "de",
             "key": "  DE",
-            "keyColor": "magenta"
+            "keyColor": "cyan"
         },
         {
             "type": "wm",
             "key": "  WM",
-            "keyColor": "magenta"
+            "keyColor": "cyan"
         },
         {
             "type": "terminal",
             "key": "  Terminal",
-            "keyColor": "magenta"
+            "keyColor": "cyan"
         },
         "break",
         {
