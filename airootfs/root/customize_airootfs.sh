@@ -23,8 +23,8 @@ useradd -m -G wheel,video,audio,storage,optical,network,power -s /usr/bin/fish m
 echo "mectov:mectov" | chpasswd
 echo "root:mectov" | chpasswd
 
-# Allow wheel group to use sudo
-sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+# Allow wheel group to use sudo without password in live environment
+sed -i 's/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
 
 # Set timezone
 ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
