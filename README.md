@@ -14,8 +14,15 @@
 - 🎮 **GPU Drivers** — NVIDIA, AMD, and Intel out of the box
 - 📦 **Flatpak Ready** — Access thousands of apps
 - 🛡️ **Calamares Installer** — Easy graphical installation
-- 🎨 **Tokyo Night Theme** — Beautiful dark theme throughout
+- 🎨 **Emerald Teal Theme** — Clean, dark-slate visual theme (CachyOS style)
 - ⚡ **Arch Rolling Release** — Always up to date
+
+## 📥 Download
+
+You can download the latest built ISO of Mectov Linux from our private home server:
+
+* **[Download Mectov Linux ISO (Mirror 1)](PASTE_YOUR_FILEBROWSER_SHARE_LINK_HERE)**
+
 
 ## 📦 Pre-installed Software
 
